@@ -1,6 +1,5 @@
 const listBooks = document.querySelector('.list-books');
 
-class Book {
   const form = document.querySelector('.form-input');
   const [title, author] = form.elements;
 
@@ -19,15 +18,16 @@ class Book {
     inputBook.author = author.value;
   });
 
+class Book {
   function Book(title, author) {
     this.title = title;
     this.author = author;
   }
-
-  const populateFields = () => {
-    localStorage.setItem('savedBooks', JSON.stringify(books));
-  };
 }
+
+const populateFields = () => {
+  localStorage.setItem('savedBooks', JSON.stringify(books));
+};
 
 class UI {
   function removeBook(book) {
@@ -35,6 +35,7 @@ class UI {
     books = result;
     populateFields();
   }
+}
 
   const displayBooks = () => {
     listBooks.innerHTML = '';
@@ -78,4 +79,3 @@ class UI {
 
   displayBooks();
   populateFields();
-}
