@@ -17,3 +17,17 @@ p {
   padding: 0;
   margin: 0;
 }
+
+.list-books {
+  max-width: 32rem;
+  margin: 0 auto;
+  border: 0.25rem black solid;
+  border-radius: 0.5rem;
+}
+
+.book-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px darkgray solid;
+  padding: 0.5rem;
+}
