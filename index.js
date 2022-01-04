@@ -42,8 +42,8 @@ const Book = class {
   static displayBooks = () => {
     listBooks.innerHTML = '';
     books.map((book) => {
-      const bookDiv = document.createElement('table');
-      const elementBook = document.createElement('th');
+      const bookDiv = document.createElement('tr');
+      const elementBook = document.createElement('td');
       const deleteBtn = document.createElement('button');
       deleteBtn.textContent = 'Remove';
 

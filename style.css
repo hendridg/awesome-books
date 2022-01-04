@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+html,
 body {
   padding: 1em;
   margin: 0;
+  font-family: 'Quicksand', 'Courier New', Courier, monospace;
+  box-sizing: border-box;
+  color: #333;
 }
 
 ul {
@@ -9,25 +15,60 @@ ul {
 }
 
 li {
+  display: flex;
+  justify-content: flex-end;
   margin: 0;
   margin-bottom: 1rem;
 }
 
-p {
-  padding: 0;
-  margin: 0;
+button {
+  background: #f1356d;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 0.4rem;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+input {
+  padding: 0.3rem;
+  width: 100%;
+  border: 0.125rem #333 solid;
+  border-radius: 0.25rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr:nth-child(even) {
+  background-color: lightgray;
 }
 
 .list-books {
+  border: 0.125rem solid #333;
+  border-radius: 0.25rem;
   max-width: 32rem;
   margin: 0 auto;
-  border: 0.25rem black solid;
-  border-radius: 0.5rem;
 }
 
 .book-container {
   display: flex;
   justify-content: space-between;
-  border-bottom: 2px darkgray solid;
   padding: 0.5rem;
+}
+
+.title-list-books,
+.title-form-add {
+  text-align: center;
+  color: #f1356d;
+}
+
+.form-input {
+  margin: 0 auto;
+  max-width: 16rem;
+  box-sizing: border-box;
 }
