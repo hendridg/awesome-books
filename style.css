@@ -33,6 +33,11 @@ nav {
 .list-item {
   padding: 0.2rem;
   margin: 0;
+  cursor: pointer;
+}
+
+.list-item:hover {
+  color: #f1356d;
 }
 
 li {
@@ -44,6 +49,7 @@ li {
 
 .contact-details {
   list-style: circle;
+  margin-top: 2rem;
 }
 
 span {
@@ -92,22 +98,10 @@ tr:nth-child(even) {
 }
 
 .title-list-books,
-.title-form-add {
+.title-form-add,
+.title-contact {
   text-align: center;
   color: #f1356d;
-}
-
-.title-form-add::before {
-  content: '';
-  height: 3px;
-  width: 6rem;
-  margin: 0 auto;
-  display: flex;
-  position: relative;
-  bottom: 2rem;
-  z-index: -1;
-  border-radius: 3px;
-  background: #f1356d;
 }
 
 .form-input {
@@ -121,6 +115,18 @@ tr:nth-child(even) {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 0 auto;
+  max-width: 32rem;
+}
+
+.contact > p {
+  padding: 0;
+  margin: 0;
+  align-self: flex-start;
+}
+
+.title-contact {
+  margin-bottom: 3rem;
 }
 
 footer {
@@ -130,4 +136,8 @@ footer {
   max-width: 40rem;
   margin: 0 auto;
   margin-top: 3rem;
+}
+
+.hidden {
+  display: none;
 }
