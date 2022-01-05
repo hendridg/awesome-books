@@ -29,6 +29,10 @@ Open a terminal or a git bash in the desired directory and run `https://github.c
 - Twitter: [@hendridg](https://twitter.com/hendridg)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/hendridg)
 
+👤 **Author2**
+
+- GitHub: [@craigs40](https://github.com/craigs40)
+
 ## 📝 License
 
 This project is [MIT](./MIT.md) licensed.
