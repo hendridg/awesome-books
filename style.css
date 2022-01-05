@@ -2,7 +2,13 @@
 
 html,
 body {
-  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  padding: 0.2rem;
   margin: 0;
   font-family: 'Quicksand', 'Courier New', Courier, monospace;
   box-sizing: border-box;
@@ -22,6 +28,7 @@ nav {
   padding: 10px;
   max-width: 40rem;
   margin: 0 auto;
+  width: 90%;
 }
 
 .nav-ul {
@@ -83,6 +90,13 @@ tr:nth-child(even) {
   background-color: lightgray;
 }
 
+.all-books,
+.add-book {
+  display: block;
+  width: 90%;
+  max-width: 32rem;
+}
+
 .list-books {
   border: 0.125rem solid #333;
   border-radius: 0.25rem;
@@ -106,7 +120,7 @@ tr:nth-child(even) {
 
 .form-input {
   margin: 0 auto;
-  max-width: 16rem;
+  max-width: 26rem;
   box-sizing: border-box;
 }
 
@@ -131,11 +145,12 @@ tr:nth-child(even) {
 
 footer {
   display: flex;
+  align-self: flex-end;
   border: 2px #333 solid;
   padding: 10px;
   max-width: 40rem;
   margin: 0 auto;
-  margin-top: 3rem;
+  width: 90%;
 }
 
 .hidden {
