@@ -14,11 +14,40 @@ ul {
   padding: 0;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px #333 solid;
+  padding: 10px;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.nav-ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item {
+  padding: 0.2rem;
+  margin: 0;
+}
+
 li {
   display: flex;
   justify-content: flex-end;
   margin: 0;
   margin-bottom: 1rem;
+}
+
+.contact-details {
+  list-style: circle;
+}
+
+span {
+  display: block;
 }
 
 button {
@@ -85,4 +114,20 @@ tr:nth-child(even) {
   margin: 0 auto;
   max-width: 16rem;
   box-sizing: border-box;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  border: 2px #333 solid;
+  padding: 10px;
+  max-width: 40rem;
+  margin: 0 auto;
+  margin-top: 3rem;
 }
